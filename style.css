@@ -1,0 +1,290 @@
+/*
+  Change the colours here to update the overall look.
+  This page uses a calm blue and cream palette.
+*/
+
+:root {
+  --cream: #f7f3eb;
+  --paper: #fffdf9;
+  --sky: #dfeefb;
+  --blue-strong: #2f5d8a;
+  --blue-mid: #5b87b2;
+  --blue-soft: #bfd7ee;
+  --text: #1f2d3d;
+  --muted: #4a5d72;
+  --border: #cfe0ee;
+  --shadow: rgba(47, 93, 138, 0.12);
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--blue-strong);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Keep keyboard focus easy to see */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--blue-mid);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--paper);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.site-header {
+  background: rgba(255, 253, 249, 0.95);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.top-nav,
+.section,
+.hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4.5rem;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links a {
+  font-weight: 600;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  text-align: center;
+  background: linear-gradient(180deg, var(--sky) 0%, var(--cream) 100%);
+}
+
+.hero-text {
+  max-width: 700px;
+  padding: 2rem 0;
+}
+
+.eyebrow,
+.section-tag {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--blue-strong);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.15rem;
+  max-width: 40rem;
+  margin: 0 auto 1.5rem;
+  color: var(--muted);
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  background: var(--blue-strong);
+  color: #fff;
+}
+
+.button.secondary {
+  background: var(--paper);
+  color: var(--blue-strong);
+  border: 1px solid var(--border);
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.alternate-bg {
+  background: var(--sky);
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.content-box,
+.project-card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.content-box {
+  max-width: 760px;
+  padding: 1.5rem;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.skill-list li {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  padding: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(47, 93, 138, 0.06);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.contact-section {
+  padding-bottom: 5rem;
+}
+
+.contact-text {
+  font-size: 1.05rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/*
+  Update the spacing values here if you want larger or smaller gaps.
+  For example, change padding-top and gap values to adjust the layout.
+*/
+
+@media (max-width: 640px) {
+  .top-nav {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 60vh;
+  }
+
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
