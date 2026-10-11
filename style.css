@@ -276,8 +276,33 @@ h2 {
   background: var(--paper);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.75rem;
   max-width: 100%;
+}
+
+.contact-text p {
+  margin: 0;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 700;
+}
+
+.contact-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
 }
 
 /*
