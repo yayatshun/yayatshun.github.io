@@ -108,6 +108,7 @@ button:focus-visible {
 }
 
 .nav-links a {
+  font-family: "IBM Plex Serif", serif;
   font-weight: 600;
   padding: 0.4rem 0.5rem;
   border-radius: 0.4rem;
@@ -145,6 +146,7 @@ h3 {
 }
 
 h1 {
+  font-family: "Fira Sans", sans-serif;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   margin-bottom: 1rem;
 }
@@ -154,7 +156,14 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.about-section h2,
+#skills h2,
+.contact-section h2 {
+  font-family: "DynaPuff", sans-serif;
+}
+
 .intro {
+  font-family: "Grechen Fuemen", cursive;
   font-size: 1.15rem;
   max-width: 40rem;
   margin: 0 auto 1.5rem;
@@ -208,6 +217,20 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+.specialties {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.specialties h3,
+.specialties p {
+  margin-bottom: 0.5rem;
+}
+
+.specialties p {
+  color: var(--muted);
+}
+
 .content-box,
 .project-card {
   background: var(--paper);
@@ -223,6 +246,7 @@ h2 {
 
 .about-content .content-box {
   max-width: none;
+  font-family: "IBM Plex Serif", serif;
 }
 
 .skill-list {
@@ -313,6 +337,10 @@ h2 {
   align-items: center;
   gap: 0.45rem;
   font-weight: 700;
+}
+
+.linkedin-link {
+  color: #0a66c2;
 }
 
 .contact-icon {
