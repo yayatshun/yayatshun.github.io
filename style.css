@@ -1,21 +1,21 @@
 /*
   Change the colours here to update the overall look.
-  This fintech-themed version uses a modern blue and teal palette.
+  This version uses a monochrome black, white, and gray palette.
 */
 
 :root {
-  --cream: #eef7fb;
+  --cream: #f5f5f5;
   --paper: #ffffff;
-  --sky: #dff5f7;
-  --blue-strong: #113f67;
-  --blue-mid: #1e6ca8;
-  --blue-soft: #a7d7ef;
-  --teal: #2fb6c9;
-  --teal-soft: #c9f0f5;
-  --text: #16324a;
-  --muted: #45657d;
-  --border: #cfe7f0;
-  --shadow: rgba(17, 63, 103, 0.14);
+  --sky: #e8e8e8;
+  --blue-strong: #171717;
+  --blue-mid: #4b4b4b;
+  --blue-soft: #bdbdbd;
+  --teal: #777777;
+  --teal-soft: #dddddd;
+  --text: #171717;
+  --muted: #555555;
+  --border: #d2d2d2;
+  --shadow: rgba(0, 0, 0, 0.12);
   --max-width: 1100px;
 }
 
@@ -71,7 +71,7 @@ button:focus-visible {
 }
 
 .site-header {
-  background: rgba(255, 253, 249, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -116,7 +116,7 @@ button:focus-visible {
 .hero {
   display: grid;
   place-items: center;
-  min-height: 70vh;
+  min-height: 50vh;
   text-align: center;
   background: linear-gradient(180deg, var(--sky) 0%, var(--cream) 100%);
 }
@@ -161,41 +161,15 @@ h2 {
   color: var(--muted);
 }
 
-.hero-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.9rem 1.4rem;
-  border-radius: 999px;
-  font-weight: 700;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.button:hover {
-  text-decoration: none;
-  transform: translateY(-1px);
-}
-
-.button.primary {
-  background: linear-gradient(135deg, var(--blue-strong), var(--blue-mid));
-  color: #fff;
-}
-
-.button.secondary {
-  background: var(--paper);
-  color: var(--blue-strong);
-  border: 1px solid var(--border);
+.hero-tags {
+  color: #4c8fbd;
 }
 
 .profile-photo {
-  width: min(100%, 240px);
-  height: 240px;
-  margin-top: 3rem;
+  display: block;
+  width: min(100%, 320px);
+  height: 320px;
+  margin: 0 auto 1.5rem;
   object-fit: cover;
   border-radius: 1rem;
   border: 2px solid rgba(255, 255, 255, 0.8);
@@ -244,7 +218,7 @@ h2 {
   border-radius: 0.85rem;
   padding: 1rem;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(47, 93, 138, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .skill-card {
@@ -358,12 +332,12 @@ h2 {
   }
 
   .hero {
-    min-height: 60vh;
+    min-height: 40vh;
   }
 
   .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
   }
 
   .section {
