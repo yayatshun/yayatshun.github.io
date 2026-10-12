@@ -169,7 +169,7 @@ h2 {
 
 .intro {
   font-family: "Grechen Fuemen", cursive;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   max-width: 40rem;
   margin: 0 auto 1.5rem;
   color: var(--muted);
@@ -369,7 +369,7 @@ h2 {
 
 .back-to-top {
   position: fixed;
-  right: 1.5rem;
+  right: 3rem;
   bottom: 1.5rem;
   z-index: 20;
   display: grid;
@@ -462,11 +462,16 @@ h2 {
   }
 
   .hero {
-    min-height: 25vh;
+    min-height: 20vh;
+  }
+
+  .hero-text {
+    padding: 1.5rem 0;
   }
 
   .about-section {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
   }
 
   .about-content {
