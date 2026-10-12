@@ -27,7 +27,7 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header">
+    <header id="top" class="site-header">
       <nav class="top-nav" aria-label="Main navigation">
         <div class="brand">Chan Yat Shun</div>
         <div class="nav-links">
@@ -180,5 +180,16 @@
         </div>
       </section>
     </main>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+      <svg class="back-to-top-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+    <script>
+      document.querySelector(".back-to-top").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>

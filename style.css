@@ -358,6 +358,41 @@ h2 {
   fill: currentColor;
 }
 
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 20;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--blue-strong);
+  color: var(--paper);
+  box-shadow: 0 4px 12px var(--shadow);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.back-to-top:hover {
+  background: var(--blue-mid);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
 @media (min-width: 641px) {
   .contact-links {
     flex-wrap: nowrap;
@@ -390,15 +425,27 @@ h2 {
 */
 
 @media (max-width: 640px) {
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
   .top-nav {
     flex-direction: column;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    min-height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    gap: 0.35rem;
   }
 
   .nav-links {
     justify-content: center;
+    gap: 0.25rem 0.5rem;
+  }
+
+  .nav-links a {
+    padding: 0.25rem 0.35rem;
   }
 
   .hero {
