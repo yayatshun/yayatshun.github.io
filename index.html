@@ -29,7 +29,7 @@
 
     <header id="top" class="site-header">
       <nav class="top-nav" aria-label="Main navigation">
-        <div class="brand">Chan Yat Shun</div>
+        <a class="brand" href="#top" aria-label="Chan Yat Shun - Home">Chan Yat Shun</a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -187,6 +187,11 @@
       </svg>
     </button>
     <script>
+      document.querySelector(".brand").addEventListener("click", (event) => {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
       document.querySelector(".back-to-top").addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       });

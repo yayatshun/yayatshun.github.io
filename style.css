@@ -101,6 +101,10 @@ button:focus-visible {
   letter-spacing: 0.04em;
 }
 
+.brand:hover {
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -368,7 +372,7 @@ h2 {
   height: 2.5rem;
   place-items: center;
   padding: 0;
-  border: 1px solid var(--border);
+  border: none;
   border-radius: 50%;
   background: var(--blue-strong);
   color: var(--paper);
