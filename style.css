@@ -91,7 +91,7 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 4.5rem;
+  min-height: 3.5rem;
   gap: 1rem;
 }
 
