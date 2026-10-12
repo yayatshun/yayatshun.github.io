@@ -193,13 +193,18 @@ h2 {
   margin: 0;
   object-fit: cover;
   border-radius: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 10px 22px var(--shadow);
 }
 
 .section {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+#skills,
+#projects {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .about-section {
@@ -481,5 +486,11 @@ h2 {
   .section {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  #skills,
+  #projects {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
